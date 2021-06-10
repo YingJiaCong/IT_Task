@@ -1,0 +1,25 @@
+body {
+    background-color: #68cdd5;
+}
+.return {
+    margin-top: 30px;
+    margin-left: 20px;
+}
+.logo {
+    margin:100px auto;
+    text-align: center;
+}
+p {
+    color: white;
+    margin: 100px 50px;
+}
+.image-left {
+    float: left;
+    margin-left: 30px;
+    margin-bottom: 100px;
+}
+.image-right {
+    float: right;
+    margin-right: 30px;
+    margin-bottom: 100px;
+}
