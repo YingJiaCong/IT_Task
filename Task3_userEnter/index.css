@@ -1,0 +1,78 @@
+/* 此为float+文档流的形式
+.topbar {
+    background-color: #68cdd5;
+}
+.topbar-right {
+    float: right;
+    color: white;
+    text-align: center;
+    height: 30px;
+    line-height: 30px;!*让行高等于字体高度，使其垂直居中*!
+    padding-right: 5%;
+}
+.topbar-left {
+    float: left;
+    color: white;
+    text-align: center;
+    height: 30px;
+    line-height: 30px;!*让行高等于字体高度，使其垂直居中*!
+    padding-left: 5%;
+}
+.topbar-center {
+    font-size: 1.2rem;
+    color: white;
+    text-align: center;
+    height: 30px;
+    line-height: 30px;!*让行高等于字体高度，使其垂直居中*!
+}
+*/
+/* 使用flex布局的方式*/
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #d0d0d0;
+}
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: #0099cc;
+    height: 40px;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+.topbar-left {
+    padding-left: 5%;
+}
+.topbar-center {
+    font-size: 1.2rem;
+}
+.topbar-right {
+    padding-right: 5%;
+}
+.mainContent {
+    display: flex;
+    background-color: white;
+    margin-top: 2%;
+}
+.mainContent img {
+    padding: 5%;
+    height: 20px;
+    width: 15px;
+}
+.mainContent form{
+    display: flex;/*采用flex布局，使表单居中*/
+    justify-content: center;
+    align-items: center;
+}
+.mainContent form input {
+    border-style: hidden;/*隐藏表单的边框*/
+    font-size: 1rem;/*设置表单字体为浏览器默认字体即1rem = 16px*/
+}
+.forgetpsw {
+    display: flex; /*采用flex布局*/
+    justify-content: flex-end; /*主轴采用flex-end 使其靠最右*/
+    align-items: center;/*交叉轴采用center 使其在中见*/
+    color: cornflowerblue;
+    text-decoration: underline; /*设置下划线*/
+}
